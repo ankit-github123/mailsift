@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+coverage/
+*.log
+
+# Google OAuth files for later Gmail integration
+credentials.json
+token.json
+back-end/credentials.json
+back-end/token.json

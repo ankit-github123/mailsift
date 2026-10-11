@@ -1,0 +1,19 @@
+{
+  "name": "email-cleaner",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "front-end",
+    "back-end"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace back-end\" \"npm run dev --workspace front-end\"",
+    "dev:frontend": "npm run dev --workspace front-end",
+    "dev:backend": "npm run dev --workspace back-end",
+    "build": "npm run build --workspace front-end",
+    "start": "npm run start --workspace back-end"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
